@@ -43,7 +43,7 @@ app.use("/user", require("./routes/user"));
 // set views folder
 app.use("/views", express.static(path.join(__dirname, "public")));
 // Set the app to listen to port 3000
-.listen(process.env.PORT || 8888)
+app.listen(process.env.PORT || 8888)
 //----------------------------------------------------------------------------------------------//
 
 // // USER ROLES
