@@ -1,7 +1,8 @@
 
 // helper functions 
 const product = require('../../models/product')
-const allproducts = product.find()
+const allproducts1 = (req,res)=>{
+product.find()
 .then(resu =>
 {
 return resu;
@@ -12,4 +13,5 @@ return resu;
 console.log(error);
 return error
 })
-module.exports = {allproducts};
+}
+module.exports = {allproducts1};
