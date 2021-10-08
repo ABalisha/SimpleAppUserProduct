@@ -1,0 +1,5 @@
+db = mongodb+srv://User123:aUaT9AkqhotJA0Nd@cluster0.5pcba.mongodb.net/TestDB?retryWrites=true&w=majority
+secretkey = fd5180d8f63e87b02e921e343844e0a2403618d2bc62c94022f328f0aec342bbc3861a155d2c0d085a561aed4dfcdfbc32518ae94132d24384d6a5c8178c5edd
+refreshkey = d93bfd58614ec2b2e598b29c527247782b4b19d6ebb4671c73a9adc303b1736acfa4c35969d91ac7f98c230f0eac46c9c49695af647328116692002270cae691
+loggedin = false
+PORT = 8888
