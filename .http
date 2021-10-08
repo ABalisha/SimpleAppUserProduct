@@ -1,0 +1,6 @@
+post localhost:3001
+Content-Type: application/json
+
+{
+    "userID":"1"
+}

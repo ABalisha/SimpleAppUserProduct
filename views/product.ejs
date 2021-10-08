@@ -1,0 +1,32 @@
+<html><head>
+    <title>
+Products
+    </title>
+</head>
+<body>
+    <form action="/logout" method="get">
+    <button> Log Out </button>
+</form>
+    <h1>Add Product</h1>
+    <form action="/products/add-product" method="POST">
+        <p> Enter product infor</p>
+        <input type="text" name="Productname">
+        <input type="text" name = "ProductPrize"><br>
+        <input type="Submit" name = "Submit34234">
+        <h1>Remove Product</h1>
+    <form action="/products/remove" method="POST">
+        <p>Enter product ID to remove</p>
+        <input type="text" name="ID">
+        <input type="Submit" name = "Submit">
+    </form>
+
+    <h1> All Products </h1>
+    <% if(typeof results !== 'undefined'){ %>
+    <% results.forEach(product =>{ %><a href = "/products/delet/<%= product.productTitle%>">Del</a>------<a href="/edit">Edit</a>
+        <h1><%= product.productTitle %> </h1>
+        <p> <%= product.productPrize %> </p>
+<% }) %>
+<% } else { console.log('error getting result') } %>
+
+</body>
+    </html
